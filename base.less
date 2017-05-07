@@ -1,0 +1,83 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  font-size: 16px;
+}
+
+.clearfix() {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.clearfix {
+  .clearfix();
+}
+
+.hide() {
+  display: none !important;
+}
+
+.invisible() {
+  visibility: hidden;
+}
+
+.show-block() {
+  display: block !important;
+  visibility: visible;
+}
+
+.show-inline() {
+  display: inline !important;
+  visibility: visible;
+}
+
+.show-inline-block() {
+  display: inline-block !important;
+  visibility: visible;
+}
+
+@media print {
+  .print-hide {
+    .hide();
+  }
+
+  .print-invisible {
+    .invisible();
+  }
+
+  .print-block {
+    .show-block();
+  }
+
+  .print-inline {
+    .show-inline();
+  }
+
+  .print-inline-block {
+    .show-inline-block();
+  }
+}
+
+.pos-left() {
+  float: left !important;
+}
+
+.pos-right() {
+  float: right !important;
+}
+
+.pos-left {
+  .pos-left();
+}
+
+.pos-right {
+  .pos-right();
+}
