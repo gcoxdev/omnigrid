@@ -34,6 +34,12 @@ Start with the grid container. This can be standard or full width.
 <div class="grid">
 
 </div>
+
+-- or --
+
+<div class="grid-full">
+
+</div>
 ```
 
 Then add your rows and define the number of columns per row for each device.
