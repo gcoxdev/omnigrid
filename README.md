@@ -77,7 +77,7 @@ The positioning is a combination of push/pull and offset to simplify the grid cr
 This may change in the future but for now here's how you do it.
 You will have to take into consideration the column's width and the available number of columns within the row.
 
-Consider the small device. There are 5 columns available.
+Consider the small device. There are 6 columns available.
 Starting positions would be 1, 2, 3, 4, 5, and 6.
 Column widths are 1, 3, and 2.
 Say we wanted to put Column 2 first, Column 3 second, and Column 1 last.
