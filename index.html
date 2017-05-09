@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Omnigrid</title>
+    <link rel="stylesheet" href="omnigrid.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="grid">
+      <div class="row sm-6 md-9 lg-12 xl-16">
+        <div class="col sm-1 sm-pos-6 md-4 lg-2 xl-4 red">
+          Col 1
+        </div>
+        <div class="col sm-3 sm-pos-1 md-2 lg-6 xl-8 yellow">
+          Col 2
+        </div>
+        <div class="col sm-2 sm-pos-4 md-3 lg-4 xl-4 blue">
+          Col 3
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="grid">
+      <div class="row xl-12">
+        <div class="col xl-4 sm-hide red">
+          <div class="row lg-6 xl-6">
+            <div class="col lg-1 xl-3">
+              <input type="submit" value="Test" />
+            </div>
+            <div class="col lg-5 xl-3">
+              <button>Test Button</button>
+            </div>
+          </div>
+        </div>
+        <div class="col xl-4 blue">
+          <div class="group">
+            <input class="group-item" type="text" value="text 2" />
+            <div class="group-item"><button>Test</button></div>
+          </div>
+        </div>
+        <div class="col xl-4 green">
+          <textarea>text 3</textarea>
+        </div>
+      </div>
+      <div class="row xl-12">
+        <div class="col xl-6 red">
+          <input class="group-item" type="text" value="text 2" />
+        </div>
+        <div class="col xl-6 red">
+          <select>
+            <option value="">Test</option>
+            <option value="test2">Test2</option>
+          </select>
+        </div>
+      </div>
+      <div class="row xl-12">
+        <div class="col xl-12 blue">
+          <div class="group">
+            <span class="group-item">$$</span>
+            <input class="group-item" type="text" placeholder="Test input">
+            <div class="group-item"><input type="submit" value="Test"></div>
+          </div><br>
+          <input type="checkbox">Test check<br><br>
+          <input name="test" type="radio"> Test 1
+          <input name="test" type="radio"> Test 2<br><br>
+          <input type="file"><br><br>
+          <input type="submit" value="Test"><br><br>
+          <select>
+            <option value="">Test</option>
+            <option value="test2">Test2</option>
+          </select><br><br>
+          <select multiple>
+            <option value="">Test</option>
+            <option value="test2">Test2</option>
+            <option value="">Test</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
