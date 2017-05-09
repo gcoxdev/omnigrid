@@ -7,76 +7,95 @@
   </head>
   <body>
     <div class="grid">
+
+      <u><h1>Various row columns</h1></u>
+
       <div class="row sm-6 md-9 lg-12 xl-16">
-        <div class="col sm-1 sm-pos-6 md-4 lg-2 xl-4 red">
+        <div class="col sm-1 md-3 lg-1 xl-2 red">
           Col 1
         </div>
-        <div class="col sm-3 sm-pos-1 md-2 lg-6 xl-8 yellow">
+        <div class="col sm-2 md-3 lg-10 xl-8 yellow">
           Col 2
         </div>
-        <div class="col sm-2 sm-pos-4 md-3 lg-4 xl-4 blue">
+        <div class="col sm-3 md-3 lg-1 xl-6 blue">
           Col 3
         </div>
       </div>
-    </div>
-    <br>
-    <br>
-    <div class="grid">
-      <div class="row xl-12">
-        <div class="col xl-4 sm-hide red">
-          <div class="row lg-6 xl-6">
-            <div class="col lg-1 xl-3">
-              <input type="submit" value="Test" />
-            </div>
-            <div class="col lg-5 xl-3">
-              <button>Test Button</button>
-            </div>
-          </div>
+
+      <br>
+      <br>
+
+      <u><h1>Column positioning</h1></u>
+
+      <div class="row sm-4 md-9 lg-12 xl-16">
+        <div class="col sm-1 sm-pos-4 md-3 lg-2 xl-3 red">
+          Col 1
         </div>
-        <div class="col xl-4 blue">
-          <div class="group">
-            <input class="group-item" type="text" value="text 2" />
-            <div class="group-item"><button>Test</button></div>
-          </div>
+        <div class="col sm-1 sm-pos-2 md-2 lg-6 xl-8 yellow">
+          Col 2
         </div>
-        <div class="col xl-4 green">
-          <textarea>text 3</textarea>
+        <div class="col sm-1 sm-pos-3 md-3 lg-3 xl-2 blue">
+          Col 3
+        </div>
+        <div class="col sm-1 sm-pos-1 md-1 lg-1 xl-3 green">
+          Col 4
         </div>
       </div>
-      <div class="row xl-12">
-        <div class="col xl-6 red">
-          <input class="group-item" type="text" value="text 2" />
+
+      <br>
+      <br>
+
+      <u><h1>Form styling</h1></u>
+
+      <div class="row">
+        <div class="col">
+          <h3>Text input</h3>
+          <input type="text" placeholder="Enter some text here">
         </div>
-        <div class="col xl-6 red">
+        <div class="col">
+          <h3>Input group</h3>
+          <div class="group">
+            <span class="group-item">$</span>
+            <input class="group-item" type="number" placeholder="9.99">
+            <div class="group-item"><input type="submit" value="Submit"></div>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Single select</h3>
           <select>
-            <option value="">Test</option>
-            <option value="test2">Test2</option>
+            <option value="">Choose a Country</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
           </select>
         </div>
-      </div>
-      <div class="row xl-12">
-        <div class="col xl-12 blue">
-          <div class="group">
-            <span class="group-item">$$</span>
-            <input class="group-item" type="text" placeholder="Test input">
-            <div class="group-item"><input type="submit" value="Test"></div>
-          </div><br>
-          <input type="checkbox">Test check<br><br>
-          <input name="test" type="radio"> Test 1
-          <input name="test" type="radio"> Test 2<br><br>
-          <input type="file"><br><br>
-          <input type="submit" value="Test"><br><br>
-          <select>
-            <option value="">Test</option>
-            <option value="test2">Test2</option>
-          </select><br><br>
+        <div class="col">
+          <h3>Multiple select</h3>
           <select multiple>
-            <option value="">Test</option>
-            <option value="test2">Test2</option>
-            <option value="">Test</option>
+            <option value="item1">Item 1</option>
+            <option value="item2">Item 2</option>
+            <option value="item3">Item 3</option>
           </select>
         </div>
+        <div class="col">
+          <h3>Button</h3>
+          <button>Button</button>
+        </div>
+        <div class="col">
+          <h3>Checkboxes</h3>
+          <label><input type="checkbox">Checkbox 1</label>&nbsp;&nbsp;&nbsp;
+          <label><input type="checkbox">Checkbox 2</label>
+        </div>
+        <div class="col">
+          <h3>Radio buttons</h3>
+          <label><input name="radio" type="radio">Radio 1</label>&nbsp;&nbsp;&nbsp;
+          <label><input name="radio" type="radio">Radio 2</label>
+        </div>
+        <div class="col">
+          <h3>File upload</h3>
+          <input type="file">
+        </div>
       </div>
+      <br><br>
     </div>
   </body>
 </html>
