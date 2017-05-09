@@ -7,17 +7,23 @@
   </head>
   <body>
     <div class="grid">
+      <h1 style="text-align: center;">Omnigrid Demo</h1>
 
-      <u><h1>Various row columns</h1></u>
+      <u><h1>Row column sizing</h1></u>
+      <div class="sm-show-block">Example: sm - 4 columns per row</div>
+      <div class="md-show-block">Example: md - 9 columns per row</div>
+      <div class="lg-show-block">Example: lg - 13 columns per row</div>
+      <div class="xl-show-block">Example: xl - 16 columns per row</div>
+      <br>
 
-      <div class="row sm-6 md-9 lg-12 xl-16">
+      <div class="row sm-6 md-9 lg-13 xl-16">
         <div class="col sm-1 md-3 lg-1 xl-2 red">
           Col 1
         </div>
         <div class="col sm-2 md-3 lg-10 xl-8 yellow">
           Col 2
         </div>
-        <div class="col sm-3 md-3 lg-1 xl-6 blue">
+        <div class="col sm-3 md-3 lg-2 xl-6 blue">
           Col 3
         </div>
       </div>
@@ -26,18 +32,23 @@
       <br>
 
       <u><h1>Column positioning</h1></u>
+      <div class="sm-show-block">Example: sm column order - 4, 2, 3, 1</div>
+      <div class="md-show-block">Example: md column order - 2, 3, 1, 4</div>
+      <div class="lg-show-block">Example: lg column order - 3, 1, 2, 4</div>
+      <div class="xl-show-block">Example: xl column order - 1, 4, 3, 2</div>
+      <br>
 
       <div class="row sm-4 md-9 lg-12 xl-16">
-        <div class="col sm-1 sm-pos-4 md-3 lg-2 xl-3 red">
+        <div class="col sm-1 sm-pos-4 md-3 md-pos-6 lg-2 lg-pos-4 xl-3 xl-pos-1 red">
           Col 1
         </div>
-        <div class="col sm-1 sm-pos-2 md-2 lg-6 xl-8 yellow">
+        <div class="col sm-1 sm-pos-2 md-2 md-pos-1 lg-6 lg-pos-6 xl-8 xl-pos-9 yellow">
           Col 2
         </div>
-        <div class="col sm-1 sm-pos-3 md-3 lg-3 xl-2 blue">
+        <div class="col sm-1 sm-pos-3 md-3 md-pos-3 lg-3 lg-pos-1 xl-2 xl-pos-7 blue">
           Col 3
         </div>
-        <div class="col sm-1 sm-pos-1 md-1 lg-1 xl-3 green">
+        <div class="col sm-1 sm-pos-1 md-1 md-pos-9 lg-1 lg-pos-12 xl-3 xl-pos-4 green">
           Col 4
         </div>
       </div>
@@ -49,11 +60,11 @@
 
       <div class="row">
         <div class="col">
-          <h3>Text input</h3>
+          <h4>Text input</h4>
           <input type="text" placeholder="Enter some text here">
         </div>
         <div class="col">
-          <h3>Input group</h3>
+          <h4>Input group</h4>
           <div class="group">
             <span class="group-item">$</span>
             <input class="group-item" type="number" placeholder="9.99">
@@ -61,7 +72,7 @@
           </div>
         </div>
         <div class="col">
-          <h3>Single select</h3>
+          <h4>Single select</h4>
           <select>
             <option value="">Choose a Country</option>
             <option value="US">United States</option>
@@ -69,7 +80,7 @@
           </select>
         </div>
         <div class="col">
-          <h3>Multiple select</h3>
+          <h4>Multiple select</h4>
           <select multiple>
             <option value="item1">Item 1</option>
             <option value="item2">Item 2</option>
@@ -77,21 +88,21 @@
           </select>
         </div>
         <div class="col">
-          <h3>Button</h3>
+          <h4>Button</h4>
           <button>Button</button>
         </div>
         <div class="col">
-          <h3>Checkboxes</h3>
+          <h4>Checkboxes</h4>
           <label><input type="checkbox">Checkbox 1</label>&nbsp;&nbsp;&nbsp;
           <label><input type="checkbox">Checkbox 2</label>
         </div>
         <div class="col">
-          <h3>Radio buttons</h3>
+          <h4>Radio buttons</h4>
           <label><input name="radio" type="radio">Radio 1</label>&nbsp;&nbsp;&nbsp;
           <label><input name="radio" type="radio">Radio 2</label>
         </div>
         <div class="col">
-          <h3>File upload</h3>
+          <h4>File upload</h4>
           <input type="file">
         </div>
       </div>
