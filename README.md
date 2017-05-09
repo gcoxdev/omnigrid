@@ -20,12 +20,16 @@ None, unless you want to compile the css in which case you will need Less.
 
 ### Installing
 
-As the project grows there may be some javascript enhancements but for now only the meta tag and css file needs to be included.
+As the project grows there may be some javascript enhancements but for now only the meta tag and css file need to be included.
 
 ```
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="omnigrid.css" />
 ```
+
+## Demo
+
+[Demo](https://gcoxdev.github.io/omnigrid/)
 
 ## How to Use
 
