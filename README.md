@@ -29,7 +29,7 @@ As the project grows there may be some javascript enhancements but for now only 
 
 ## Demo
 
-[Demo](https://gcoxdev.github.io/omnigrid/)
+[Demo](https://gcoxdev.github.io/omnigrid/demo/)
 
 ## How to Use
 
