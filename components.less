@@ -1,33 +1,89 @@
-input[type="text"], input[type="number"], select, textarea {
-  width: 100%;
-  border: 2px solid @default-base;
-  &:hover {
-    .input-hover();
-  }
-  &:focus {
-    .input-focus();
+.text-field-sizing() {
+  &.field {
+    width: 100%;
+    &:hover {
+      .input-hover();
+    }
+    &:focus {
+      .input-focus();
+    }
   }
 }
 
-input[type="text"], input[type="number"], select {
-  padding: 10px;
+.text-field-border() {
+  border: 2px solid @default-base;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select {
+  .text-field-sizing();
+  .text-field-border();
+  &.field {
+    padding: 10px;
+    height: 40px;
+  }
+}
+
+input[type="color"] {
+  &.field {
+    width: 100%;
+    height: 40px;
+  }
+}
+
+input[type="range"] {
+  &.field {
+    width: 100%;
+    border: 0px solid @default-base;
+  }
 }
 
 textarea {
-  padding: 7px 10px;
+  .text-field-sizing();
+  .text-field-border();
+  &.field {
+    padding: 7px 10px;
+  }
 }
 
-input[type="file"] {
+select.field {
+  padding: 7px;
+}
+
+select[multiple].field,
+textarea.field {
+  height: 85px;
+}
+
+input[type="file"].field {
   height: 40px;
-  background-color: @default-base;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="file"].field::-webkit-file-upload-button {
   height: 40px;
-  vertical-align: middle;
 }
 
-label input[type="checkbox"], label input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
+  &.field {
+    height: 40px;
+    vertical-align: middle;
+  }
+}
+
+label input[type="checkbox"],
+label input[type="radio"] {
   position: relative;
   bottom: 1px;
 }
@@ -40,19 +96,7 @@ input[type="radio"] {
   margin-right: 5px;
 }
 
-input[type="text"], input[type="number"], select {
-  height: 40px;
-}
-
-select {
-  padding: 7px;
-}
-
-select[multiple], textarea {
-  height: 85px;
-}
-
-input[type="submit"], button, .btn {
+.button-styling() {
   height: 40px;
   background-color: @default-base;
   color: black;
@@ -60,6 +104,15 @@ input[type="submit"], button, .btn {
   &:hover {
     .button-hover();
   }
+}
+
+input[type="submit"],
+input[type="reset"] {
+  .button-styling();
+}
+
+button, .button {
+  .button-styling();
 }
 
 .group {
