@@ -8,9 +8,20 @@
     Theme — purely visual styling (“look-and-feel”) for a component.
 */
 
-@import (less) "normalize.css";
-@import "base.less";
-@import "grid.less";
-@import "components.less";
-//@import "state.less";
-@import "theme.less";
+/* BASE */
+@import (less) "base/normalize.css";
+@import "base/base.less";
+@import "base/visibility.less";
+@import "base/helpers.less";
+
+/* LAYOUT */
+@import "layout/grid.less";
+
+/* COMPONENT */
+@import "module/form-elements.less";
+
+/* STATE */
+//@import "state/state.less";
+
+/* THEME */
+@import "theme/default-theme.less";

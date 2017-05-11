@@ -1,0 +1,44 @@
+.hide {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.show-block {
+  display: block !important;
+  visibility: visible;
+}
+
+.show-inline {
+  display: inline !important;
+  visibility: visible;
+}
+
+.show-inline-block {
+  display: inline-block !important;
+  visibility: visible;
+}
+
+@media print {
+  .print-hide {
+    .hide();
+  }
+
+  .print-invisible {
+    .invisible();
+  }
+
+  .print-block {
+    .show-block();
+  }
+
+  .print-inline {
+    .show-inline();
+  }
+
+  .print-inline-block {
+    .show-inline-block();
+  }
+}

@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="grid">
-      <h1 style="text-align: center;">Omnigrid Demo</h1>
+      <h1 class="text-center">Omnigrid Demo</h1>
 
       <u><h1>Row column sizing</h1></u>
       <div class="sm-show-block">Example: sm - 4 columns per row</div>
@@ -92,14 +92,18 @@
           <button>Button</button>
         </div>
         <div class="col">
+          <h4>Button Full</h4>
+          <button class="button-full">Button Full</button>
+        </div>
+        <div class="col">
           <h4>Checkboxes</h4>
-          <label><input type="checkbox">Checkbox 1</label>&nbsp;&nbsp;&nbsp;
-          <label><input type="checkbox">Checkbox 2</label>
+          <label><input type="checkbox" class="field">Checkbox 1</label>&nbsp;&nbsp;&nbsp;
+          <label><input type="checkbox" class="field">Checkbox 2</label>
         </div>
         <div class="col">
           <h4>Radio buttons</h4>
-          <label><input name="radio" type="radio">Radio 1</label>&nbsp;&nbsp;&nbsp;
-          <label><input name="radio" type="radio">Radio 2</label>
+          <label><input name="radio" type="radio" class="field">Radio 1</label>&nbsp;&nbsp;&nbsp;
+          <label><input name="radio" type="radio" class="field">Radio 2</label>
         </div>
         <div class="col">
           <h4>File Upload</h4>
@@ -139,7 +143,7 @@
         </div>
         <div class="col">
           <h4>Image Button</h4>
-          <input type="image" src="demo/imgbtn.png" class="field">
+          <input type="image" src="imgbtn.png" class="field">
         </div>
         <div class="col">
           <h4>Search</h4>
@@ -167,6 +171,59 @@
         </div>
       </div>
       <br><br>
+
+      <u><h1>Typography</h1></u>
+
+      <div class="row">
+        <div class="col">
+          <span class="h1">h1 Heading</span>
+        </div>
+        <div class="col">
+          <span class="h2">h2 Heading</span>
+        </div>
+        <div class="col">
+          <span class="h3">h3 Heading</span>
+        </div>
+        <div class="col">
+          <span class="h4">h4 Heading</span>
+        </div>
+        <div class="col">
+          <span class="h5">h5 Heading</span>
+        </div>
+        <div class="col">
+          <span class="h6">h6 Heading</span>
+        </div>
+        <div class="col">
+          <h4>Text Left</h4>
+          <p class="text-left">Spicy jalapeno bacon ipsum dolor amet jerky pork belly rump ground round corned beef chicken porchetta tail short loin. Andouille chicken flank, hamburger cow pig boudin pork loin t-bone. Leberkas doner turkey bacon shoulder porchetta pork belly chicken bresaola tri-tip filet mignon pork picanha sirloin biltong. Short ribs alcatra tongue drumstick kielbasa pastrami spare ribs. Capicola chicken hamburger jerky, spare ribs ham picanha.</p>
+        </div>
+        <div class="col">
+          <h4>Text Center</h4>
+          <p class="text-center">Ham hock tongue sausage ground round, pastrami frankfurter ham cupim meatball hamburger. Shoulder boudin rump cupim biltong ribeye meatball landjaeger chicken frankfurter ham hock sirloin. Kielbasa jowl strip steak ham hock ground round, beef shoulder brisket sausage. Turducken shank ham sirloin hamburger corned beef. Tenderloin biltong doner fatback brisket venison andouille shank. Turkey andouille chuck flank spare ribs chicken tri-tip ham filet mignon ball tip ham hock. Cow short ribs cupim t-bone swine kevin, doner shank tri-tip bacon kielbasa fatback meatloaf meatball tail.</p>
+        </div>
+        <div class="col">
+          <h4>Text Right</h4>
+          <p class="text-right">Turducken leberkas pork chop rump. Bresaola hamburger fatback, sausage strip steak corned beef jerky leberkas beef alcatra meatloaf boudin drumstick. Salami jerky cupim tongue shoulder hamburger spare ribs short loin chuck boudin ball tip. Shankle alcatra flank pastrami, rump meatball short ribs beef prosciutto fatback sausage brisket jerky shank swine. Chuck biltong chicken turducken prosciutto, pastrami beef ribs corned beef pork loin sirloin pork belly meatloaf.</p>
+        </div>
+        <div class="col">
+          <h4>Text Justify</h4>
+          <p class="text-justify">Hamburger rump swine cow pork tenderloin kielbasa venison pork chop shankle andouille. Sausage turducken sirloin biltong. Pork boudin alcatra, strip steak bacon flank shank doner ham cupim picanha jerky. Picanha burgdoggen prosciutto fatback ribeye t-bone short loin pancetta pork loin landjaeger sausage. Hamburger drumstick beef, alcatra tri-tip chuck cow meatloaf cupim doner biltong short loin. Filet mignon leberkas chuck burgdoggen strip steak short ribs pork. Hamburger capicola brisket t-bone venison.</p>
+        </div>
+        <div class="col">
+          <h4>Text Lowercase</h4>
+          <p class="text-lowercase">Spicy jalapeno bacon ipsum dolor amet jerky pork belly rump ground round corned beef chicken porchetta tail short loin. Andouille chicken flank, hamburger cow pig boudin pork loin t-bone. Leberkas doner turkey bacon shoulder porchetta pork belly chicken bresaola tri-tip filet mignon pork picanha sirloin biltong. Short ribs alcatra tongue drumstick kielbasa pastrami spare ribs. Capicola chicken hamburger jerky, spare ribs ham picanha.</p>
+        </div>
+        <div class="col">
+          <h4>Text Uppercase</h4>
+          <p class="text-uppercase">Ham hock tongue sausage ground round, pastrami frankfurter ham cupim meatball hamburger. Shoulder boudin rump cupim biltong ribeye meatball landjaeger chicken frankfurter ham hock sirloin. Kielbasa jowl strip steak ham hock ground round, beef shoulder brisket sausage. Turducken shank ham sirloin hamburger corned beef. Tenderloin biltong doner fatback brisket venison andouille shank. Turkey andouille chuck flank spare ribs chicken tri-tip ham filet mignon ball tip ham hock. Cow short ribs cupim t-bone swine kevin, doner shank tri-tip bacon kielbasa fatback meatloaf meatball tail.</p>
+        </div>
+        <div class="col">
+          <h4>Text Proper Case</h4>
+          <p class="text-propercase">Turducken leberkas pork chop rump. Bresaola hamburger fatback, sausage strip steak corned beef jerky leberkas beef alcatra meatloaf boudin drumstick. Salami jerky cupim tongue shoulder hamburger spare ribs short loin chuck boudin ball tip. Shankle alcatra flank pastrami, rump meatball short ribs beef prosciutto fatback sausage brisket jerky shank swine. Chuck biltong chicken turducken prosciutto, pastrami beef ribs corned beef pork loin sirloin pork belly meatloaf.</p>
+        </div>
+      </div>
+      <br><br>
+
     </div>
   </body>
 </html>

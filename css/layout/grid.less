@@ -11,7 +11,7 @@
 @col-class: col;
 
 
-.grid-base() {
+.grid-base {
   padding-left: @gutter;
   padding-right: @gutter;
   margin-left: auto;
@@ -19,7 +19,7 @@
 }
 
 .grid {
-  .grid-base();
+  .grid-base;
 
   @media (min-width: @sm-breakpoint) {
     width: @sm-breakpoint - (@gutter * 2);
@@ -139,7 +139,7 @@
   }
 }
 
-.generate-sm-device() {
+.generate-sm-device {
   @media (max-width: (@sm-breakpoint - 1)) {
     .generate-device(@max-cols, @sm-device);
 
@@ -151,7 +151,7 @@
   }
 }
 
-.generate-md-device() {
+.generate-md-device {
   @media (min-width: @sm-breakpoint) and (max-width: (@md-breakpoint - 1)) {
     .generate-device(@max-cols, @md-device);
 
@@ -163,7 +163,7 @@
   }
 }
 
-.generate-lg-device() {
+.generate-lg-device {
   @media (min-width: @md-breakpoint) and (max-width: (@lg-breakpoint - 1)) {
     .generate-device(@max-cols, @lg-device);
 
@@ -175,7 +175,7 @@
   }
 }
 
-.generate-xl-device() {
+.generate-xl-device {
   @media (min-width: @lg-breakpoint) {
     .generate-device(@max-cols, @xl-device);
 
@@ -187,7 +187,7 @@
   }
 }
 
-.generate-grid() {
+.generate-grid {
   .generate-sm-device();
   .generate-md-device();
   .generate-lg-device();
