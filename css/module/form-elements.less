@@ -1,84 +1,56 @@
-.hover {
-  border: 2px solid @default-hover;
-}
+/* INPUT FIELDS */
 
-.focus {
-  border: 2px solid @default-focus;
-}
-
-.button-hover {
-  background-color: @default-focus;
-  color: @default-inverse-text;
-  .focus();
-}
-
-.input-hover {
-  .hover();
-}
-
-.input-focus {
-  outline: 0;
-  .focus();
-}
-
-.text-field-sizing {
-  &.field {
-    width: 100%;
-    &:hover {
-      .input-hover();
-    }
-    &:focus {
-      .input-focus();
-    }
-  }
-}
-
-.text-field-border {
+.field,
+.group-item.field {
   border: 2px solid @default-base;
-}
+  padding: 10px;
+  height: 40px;
+  width: 100%;
+  outline: 0;
 
-input[type="text"],
-input[type="number"],
-input[type="date"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-input[type="week"],
-select {
-  .text-field-sizing();
-  .text-field-border();
-  &.field {
-    padding: 10px;
-    height: 40px;
+  &:hover {
+    border: 2px solid @default-hover;
+  }
+  &:focus {
+    border: 2px solid @default-focus;
   }
 }
 
-input[type="color"] {
-  &.field {
-    width: 100%;
-    height: 40px;
-  }
-}
-
-input[type="range"] {
-  &.field {
-    width: 100%;
-    border: 0px solid @default-base;
-  }
+.field::-webkit-inner-spin-button {
+  margin-top: -4px;
 }
 
 textarea {
-  .text-field-sizing();
-  .text-field-border();
-  &.field {
-    padding: 7px 10px;
-  }
+  padding: 7px 10px;
 }
+
+/* INPUT GROUPS */
+
+.group {
+  display: table;
+}
+
+.group-item {
+  display: table-cell;
+  width: 0.01%;
+}
+
+span.group-item {
+  background-color: @default-base;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* CHOICE FIELDS */
+
+input[type="range"].field {
+  border: 0px solid @default-base;
+}
+
+input[type="color"].field {
+  padding: 2px;
+}
+
 
 select.field {
   padding: 7px;
@@ -89,31 +61,45 @@ textarea.field {
   height: 85px;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  &.field {
+    height: 40px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    margin-right: 5px;
+    width: auto;
+  }
+}
+
+/* FILE UPLOAD */
+
 input[type="file"].field {
   height: 40px;
+  border: none;
+  padding: 0px;
 }
 
 input[type="file"].field::-webkit-file-upload-button {
   height: 40px;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  &.field {
-    height: 40px;
-    vertical-align: middle;
+/* BUTTONS */
+
+input[type="image"].field {
+  width: auto;
+  border: none;
+  padding: 0px;
+  &:hover {
+    border: none;
   }
 }
 
-label input[type="checkbox"],
-label input[type="radio"] {
-  position: relative;
-  bottom: 1px;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  margin-right: 5px;
+.button-hover {
+  background-color: @default-focus;
+  color: @default-inverse-text;
+  border: 2px solid @default-focus;
 }
 
 .button-styling {
@@ -138,19 +124,4 @@ button, .button {
 .button-full {
   .button-styling();
   width: 100%;
-}
-
-.group {
-  display: table;
-}
-
-.group-item {
-  display: table-cell;
-  width: 0.01%;
-}
-
-span.group-item {
-  background-color: @default-base;
-  padding-left: 10px;
-  padding-right: 10px;
 }
