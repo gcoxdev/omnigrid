@@ -1,0 +1,27 @@
+input[type="range"].field {
+  border: 0px solid @light-grey;
+}
+
+input[type="color"].field {
+  padding: 2px;
+}
+
+select.field {
+  padding: 7px !important;
+}
+
+select[multiple].field {
+  height: auto;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  &.field {
+    height: 40px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    margin-right: 5px;
+    width: auto !important;
+  }
+}

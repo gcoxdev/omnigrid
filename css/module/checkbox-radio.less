@@ -1,0 +1,44 @@
+.checkbox, .radio {
+  height: 40px;
+}
+
+.checkbox input[type="checkbox"], .radio input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox input[type="checkbox"], .checkbox span, .radio input[type="radio"], .radio span {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.checkbox span:before, .radio span:before {
+  content: '';
+  background: white;
+  border: 2px solid @light-grey;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+  margin-right: 5px;
+  margin-top: -4px;
+  text-align: center;
+}
+
+.checkbox input[type="checkbox"]:checked + span:before,
+.radio input[type="radio"]:checked + span:before {
+  background: @medium-grey;
+  box-shadow: inset 0px 0px 0px 2px white;
+}
+
+.checkbox input[type="checkbox"]:hover + span:before,
+.radio input[type="radio"]:hover + span:before {
+  background: @light-grey;
+  box-shadow: inset 0px 0px 0px 2px white;
+}
+
+.radio input[type="radio"] + span:before {
+  border-radius: 50%;
+}

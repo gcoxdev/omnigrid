@@ -1,0 +1,58 @@
+.field {
+  padding: 10px;
+  height: 40px;
+  width: 100% !important;
+  outline: 0;
+}
+
+.field-style(@bg, @text, @border) {
+  background-color: @bg;
+  color: @text;
+  border: 2px solid @border;
+}
+
+.field-create(@base-bg, @base-text, @base-border, @hover-bg, @hover-text, @hover-border, @focus-bg, @focus-text, @focus-border) {
+  .field-style(@base-bg, @base-text, @base-border);
+  &:hover {
+    .field-style(@hover-bg, @hover-text, @hover-border);
+  }
+  &:focus {
+    .field-style(@focus-bg, @focus-text, @focus-border);
+  }
+}
+
+.generate-field(@type) {
+  &.@{type} {
+    .generate-field-type(@type)
+  }
+}
+
+.generate-field-type(@type) {
+  .field-create(~"@{@{type}-field-background}", ~"@{@{type}-field-text}", ~"@{@{type}-field-border}", ~"@{@{type}-field-hover-background}", ~"@{@{type}-field-inverse-text}", ~"@{@{type}-field-hover-border}", ~"@{@{type}-field-focus-background}", ~"@{@{type}-field-inverse-text}", ~"@{@{type}-field-focus-border}");
+}
+
+.generate-all-fields() {
+  .generate-field(light);
+  .generate-field(dark);
+  .generate-field(primary);
+  .generate-field(success);
+  .generate-field(info);
+  .generate-field(caution);
+  .generate-field(alert);
+}
+
+.field,
+.group-item.field {
+  .generate-field-type(default);
+  .generate-all-fields();
+}
+
+.field::-webkit-inner-spin-button {
+  margin-top: -4px;
+}
+
+textarea.field{
+  padding: 7px 10px !important;
+  height: auto;
+  min-height: 81px;
+}

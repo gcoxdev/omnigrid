@@ -1,0 +1,54 @@
+input[type="file"].field {
+  height: 40px;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+}
+
+input[type="file"].field::-webkit-file-upload-button {
+  height: 40px;
+  cursor: pointer;
+}
+
+.upload {
+  display: table;
+}
+
+.upload span, .upload div {
+  display: table-cell;
+  position: relative;
+  min-width: 105px;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.upload input[type="file"] {
+  display: table-cell;
+  z-index: -1;
+  margin-left: -105px;
+  outline: 0;
+}
+
+@-moz-document url-prefix() {
+  .upload span, .upload div {
+    min-width: 85px;
+  }
+  .upload input[type="file"] {
+    margin-left: -86px;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .upload span, .upload div {
+    position: absolute;
+    min-width: 96px;
+    margin-left: 177px;
+  }
+
+  .upload input[type="file"] {
+    margin-left: 0px;
+    height: 40px;
+    background-color: transparent;
+  }
+}

@@ -3,6 +3,7 @@
   <head>
     <title>Omnigrid</title>
     <link rel="stylesheet" href="../omnigrid.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -64,11 +65,15 @@
           <input type="text" class="field" placeholder="Enter some text here">
         </div>
         <div class="col">
+          <h4>Text Area</h4>
+          <textarea class="field" placeholder="Enter some text here"></textarea>
+        </div>
+        <div class="col">
           <h4>Input group</h4>
           <div class="group">
-            <span class="group-item">$</span>
+            <span class="group-item text">$</span>
             <input class="group-item field" type="number" placeholder="9.99">
-            <div class="group-item"><input type="submit" value="Submit"></div>
+            <div class="group-item"><input type="submit" class="button" value="Submit"></div>
           </div>
         </div>
         <div class="col">
@@ -85,30 +90,120 @@
             <option value="item1">Item 1</option>
             <option value="item2">Item 2</option>
             <option value="item3">Item 3</option>
+            <option value="item4">Item 4</option>
           </select>
         </div>
-        <div class="col">
-          <h4>Button</h4>
-          <button>Button</button>
+      </div>
+      <div class="row sm-2 md-3 lg-5 xl-5">
+        <div class="col sm-1 md-1 lg-1 xl-1">
+          <h4>Default Button</h4>
+          <button class="button">Button</button>
         </div>
-        <div class="col">
-          <h4>Button Full</h4>
-          <button class="button-full">Button Full</button>
+        <div class="col sm-1 md-1 lg-1 xl-1">
+          <h4>Reset Button</h4>
+          <input type="reset" class="button">
         </div>
+        <div class="col sm-1 md-1 lg-1 xl-1">
+          <h4>Submit Button</h4>
+          <input type="submit" class="button" value="Submit">
+        </div>
+        <div class="col sm-1 md-1 lg-1 xl-1">
+          <h4>Link Button</h4>
+          <a href="#" class="button">Link</a>
+        </div>
+        <div class="col sm-1 md-1 lg-1 xl-1">
+          <h4>Image Button</h4>
+          <input type="image" src="imgbtn.png" class="button">
+        </div>
+      </div>
+      <div class="row sm-2 md-3 lg-7 xl-7">
+        <div class="col sm-1 md-1 lg-1 xl-1">
+          <h4>Light Button</h4>
+          <button class="button light">Button</button>
+        </div>
+        <div class="col sm-1 md-1 lg-1 xl-1">
+          <h4>Dark Button</h4>
+          <button class="button dark">Button</button>
+        </div>
+        <div class="col sm-1 md-1 lg-1 xl-1">
+          <h4>Primary Button</h4>
+          <button class="button primary">Button</button>
+        </div>
+        <div class="col sm-1 md-1 lg-1 xl-1">
+          <h4>Success Button</h4>
+          <button class="button success">Button</button>
+        </div>
+        <div class="col sm-1 md-1 lg-1 xl-1">
+          <h4>Info Button</h4>
+          <button class="button info">Button</button>
+        </div>
+        <div class="col sm-1 md-1 lg-1 xl-1">
+          <h4>Caution Button</h4>
+          <button class="button caution">Button</button>
+        </div>
+        <div class="col sm-1 md-1 lg-1 xl-1">
+          <h4>Alert Button</h4>
+          <button class="button alert">Button</button>
+        </div>
+      </div>
+      <div class="row">
         <div class="col">
+          <h4>Full Button</h4>
+          <button class="button full">Full Button</button>
+        </div>
+      </div>
+      <div class="row lg-12">
+        <div class="col lg-3">
           <h4>Checkboxes</h4>
           <label><input type="checkbox" class="field">Checkbox 1</label>&nbsp;&nbsp;&nbsp;
           <label><input type="checkbox" class="field">Checkbox 2</label>
         </div>
-        <div class="col">
+        <div class="col lg-3">
+          <h4>Custom Checkboxes</h4>
+          <div class="checkbox">
+            <label><input name="item1" type="checkbox" checked><span>Item 1</span></label>
+          </div>
+          <div class="checkbox">
+            <label><input name="item2" type="checkbox"><span>Item 2</span></label>
+          </div>
+          <div class="checkbox">
+            <label><input name="item3" type="checkbox"><span>Item 3</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="row lg-12">
+        <div class="col lg-3">
           <h4>Radio buttons</h4>
           <label><input name="radio" type="radio" class="field">Radio 1</label>&nbsp;&nbsp;&nbsp;
           <label><input name="radio" type="radio" class="field">Radio 2</label>
         </div>
-        <div class="col">
+        <div class="col lg-3">
+          <h4>Custom Radio buttons</h4>
+          <div class="radio">
+            <label><input name="items2" type="radio" checked><span>Item 1</span></label>
+          </div>
+          <div class="radio">
+              <label><input name="items2" type="radio"><span>Item 2</span></label>
+          </div>
+          <div class="radio">
+              <label><input name="items2" type="radio"><span>Item 3</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="row lg-12">
+        <div class="col lg-3">
           <h4>File Upload</h4>
           <input type="file" class="field">
         </div>
+        <div class="col lg-3">
+          <h4>Custom File Upload (ie10+)</h4>
+          <label class="upload">
+            <div class="button">Upload Files</div>
+            <input type="file"/>
+          </label>
+        </div>
+      </div>
+      <div class="row">
         <div class="col">
           <h4>Color</h4>
           <input type="color" class="field">
@@ -138,20 +233,8 @@
           <input type="range" class="field">
         </div>
         <div class="col">
-          <h4>Reset</h4>
-          <input type="reset">
-        </div>
-        <div class="col">
-          <h4>Image Button</h4>
-          <input type="image" src="imgbtn.png" class="field">
-        </div>
-        <div class="col">
           <h4>Search</h4>
           <input type="search" class="field">
-        </div>
-        <div class="col">
-          <h4>Submit</h4>
-          <input type="submit" value="Submit">
         </div>
         <div class="col">
           <h4>Telephone</h4>

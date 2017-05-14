@@ -152,7 +152,7 @@
 }
 
 .generate-md-device {
-  @media (min-width: @sm-breakpoint) and (max-width: (@md-breakpoint - 1)) {
+  @media (min-width: @sm-breakpoint) {
     .generate-device(@max-cols, @md-device);
 
     .hide-all(@sm-device);
@@ -164,7 +164,7 @@
 }
 
 .generate-lg-device {
-  @media (min-width: @md-breakpoint) and (max-width: (@lg-breakpoint - 1)) {
+  @media (min-width: @md-breakpoint) {
     .generate-device(@max-cols, @lg-device);
 
     .hide-all(@sm-device);
