@@ -12992,6 +12992,7 @@ input[type="radio"].field {
 .checkbox,
 .radio {
   height: 40px;
+  line-height: 36px;
 }
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
@@ -13203,8 +13204,11 @@ input[type="file"].field::-webkit-file-upload-button {
 .upload input[type="file"] {
   display: table-cell;
   z-index: -1;
-  margin-left: -105px;
+  margin-left: -100px;
   outline: 0;
+}
+.upload input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
 }
 @-moz-document url-prefix() {
   .upload span,
