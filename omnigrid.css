@@ -12992,7 +12992,7 @@ input[type="radio"].field {
 .checkbox,
 .radio {
   height: 40px;
-  line-height: 36px;
+  padding-top: 10px;
 }
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
@@ -13003,7 +13003,6 @@ input[type="radio"].field {
 .checkbox span,
 .radio input[type="radio"],
 .radio span {
-  display: inline-block;
   vertical-align: middle;
   cursor: pointer;
 }
@@ -13014,17 +13013,27 @@ input[type="radio"].field {
   border: 2px solid #d8d8d8;
   display: inline-block;
   vertical-align: middle;
-  width: 10px;
-  height: 10px;
+  width: 19px;
+  height: 19px;
   padding: 2px;
   margin-right: 5px;
   margin-top: -4px;
   text-align: center;
 }
-.checkbox input[type="checkbox"]:checked + span:before,
-.radio input[type="radio"]:checked + span:before {
-  background: #a5a5a5;
+.checkbox input[type="checkbox"]:checked + span:before {
+  background: #d8d8d8;
   box-shadow: inset 0px 0px 0px 2px white;
+  content: '\2713 ';
+  font-weight: 800;
+  display: inline-table;
+}
+.radio input[type="radio"]:checked + span:before {
+  background: #d8d8d8;
+  box-shadow: inset 0px 0px 0px 2px white;
+  content: '\2B24';
+  display: inline-table;
+  font-size: 11px;
+  line-height: 18px;
 }
 .checkbox input[type="checkbox"]:hover + span:before,
 .radio input[type="radio"]:hover + span:before {
