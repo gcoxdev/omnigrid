@@ -13022,7 +13022,6 @@ input[type="radio"].field {
 }
 .checkbox input[type="checkbox"]:checked + span:before {
   background: #d8d8d8;
-  box-shadow: inset 0px 0px 0px 2px grey;
   content: '\2713 ';
   font-weight: 800;
   display: inline-table;
@@ -13031,7 +13030,6 @@ input[type="radio"].field {
 }
 .radio input[type="radio"]:checked + span:before {
   background: #d8d8d8;
-  box-shadow: inset 0px 0px 0px 2px grey;
   content: '\2B24';
   display: inline-table;
   font-size: 11px;
@@ -13042,7 +13040,6 @@ input[type="radio"].field {
 .checkbox input[type="checkbox"]:hover + span:before,
 .radio input[type="radio"]:hover + span:before {
   background: #d8d8d8;
-  box-shadow: inset 0px 0px 0px 2px grey;
   border: 2px solid grey;
 }
 .radio input[type="radio"] + span:before {
@@ -13055,13 +13052,13 @@ input[type="radio"].field {
 .switch label {
   position: relative;
   display: inline-block;
-  width: 53px;
+  width: 58px;
   height: 27px;
   margin-top: 7px;
 }
 .switch label span {
   position: relative;
-  left: 58px;
+  left: 63px;
   top: 5px;
 }
 .switch label input {
@@ -13077,13 +13074,19 @@ input[type="radio"].field {
   background-color: #d8d8d8;
   transition: .5s;
 }
+.switch label:hover div {
+  background-color: grey;
+}
+.switch label:hover div:before {
+  background-color: #d8d8d8;
+}
 .switch label div:before {
   position: absolute;
   content: "";
-  height: 19px;
-  width: 19px;
-  left: 4px;
-  bottom: 4px;
+  height: 23px;
+  width: 23px;
+  left: 2px;
+  bottom: 2px;
   background-color: white;
   transition: .5s;
   color: #d8d8d8;
@@ -13095,23 +13098,23 @@ input[type="radio"].field {
   box-shadow: 0 0 1px #d8d8d8;
 }
 .switch label input:checked + div:before {
-  transform: translateX(26px);
+  transform: translateX(31px);
   content: '\2713';
   text-align: center;
   font-weight: 800;
   color: grey;
   background-color: #d8d8d8;
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 16px;
+  line-height: 22px;
 }
 .switch.round label input:checked + div:before {
-  transform: translateX(26px);
+  transform: translateX(31px);
   content: '\2B24';
   text-align: center;
   font-weight: 400;
   color: grey;
   font-size: 11px;
-  line-height: 18px;
+  line-height: 22px;
 }
 .switch.round label div {
   border-radius: 34px;
@@ -13119,7 +13122,7 @@ input[type="radio"].field {
 .switch.round label div:before {
   border-radius: 50%;
   font-size: 11px;
-  line-height: 18px;
+  line-height: 22px;
 }
 input[type="image"].button {
   width: auto;
